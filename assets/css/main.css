@@ -1,0 +1,85 @@
+/*--------------------------------------------///////////--------------------------------------------*/
+*{
+    padding: 0;
+    margin: 0;
+}
+.flex {
+    /*генерирует flex-контейнер уровня блока*/
+    display: -webkit-flex;
+    display: flex;
+}
+.flex-a {
+    /*генерирует flex-контейнер уровня строки*/
+    display: -webkit-inline-flex;
+    display: inline-flex;
+}
+li {
+    list-style-type: none; /* Убираем маркеры */
+}
+ul {
+    margin-left: 0; /* Отступ слева в браузере IE и Opera */
+    padding-left: 0; /* Отступ слева в браузере Firefox, Safari, Chrome */
+}
+a {
+    text-decoration: none; /* Отменяем подчеркивание у ссылки */
+    color: crimson;
+}
+body{
+    /*background: #181818;*/
+    background: radial-gradient(circle at 50% 50%, hsl(0, 0%, 13%), hsl(0, 0%, 9%))
+}
+/*--------------------------------------------menu--------------------------------------------*/
+.menu {
+    width: 100%;
+    height: 56px;
+    background-color: #202020;
+    color: aliceblue;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+.menu li{
+    margin: 28px 10px;
+}
+.menu a{
+    color: aliceblue;
+}
+/*--------------------------------------------article--------------------------------------------*/
+.article{
+    width: 100%;
+    justify-content: center;
+}
+.article .row{
+    width: 1200px;
+}
+.box{
+    background-color: #101010;
+    width: 200px;
+    height: 200px;
+    border: 2px solid #9c27b0;
+}
+.box .color-1{
+    color: #e91e63;
+    padding: 0 20px;
+}
+.box img{
+    width: 70%;
+    height: 70%;
+    padding: 2px;
+}
+.cenor{
+    flex-wrap: wrap;
+    justify-content: center;
+}
+.article ul{
+    flex-wrap: wrap;
+    padding: 50px 0 0 0;
+}
+.article ul li{
+    margin: 15px;
+}
+/*--------------------------------------------@media-article--------------------------------------------*/
+@media (max-width: 800px) {
+    .article .row{
+        width: 100%;
+    }
+}
